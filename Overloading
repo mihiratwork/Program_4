@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+int sum(int[],int); 
+clrscr();
+int result;
+
+cout<<"\n\nHow many Argument You want to enter:-";
+int no;
+cin>>no;
+int num[50];
+cout<<"Enter "<< no <<" Integers\n";
+for(int i=0;i < no ;i++)
+cin>>num[i];
+result=sum(num,no);
+cout<<"Addition =" << result;
+
+getch();
+}
+
+//function with n argument
+int sum(int a[],int n)
+{
+int sum=0;
+for(int i=0;i < n;i++)
+{
+sum=sum+a[i];
+}
+return(sum);
+}
